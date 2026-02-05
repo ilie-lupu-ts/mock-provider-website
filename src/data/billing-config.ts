@@ -24,7 +24,8 @@ export type BillRecord = {
   pdfUrl: string;
 };
 
-export const PDF_URL = "/dummy.pdf";
+const BASE_URL = import.meta.env.BASE_URL;
+export const PDF_URL = `${BASE_URL}dummy.pdf`;
 
 export const accounts: AccountConfig[] = [
   {

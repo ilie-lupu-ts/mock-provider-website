@@ -5,6 +5,7 @@ import { Home, Menu, X } from "lucide-react";
 import { PAGE_SIZE } from "@/data/billing-config";
 
 export default function Header() {
+  const baseUrl = import.meta.env.BASE_URL;
   const [isOpen, setIsOpen] = useState(false);
   const { auth } = useRouteContext({ from: "__root__" });
   const navigate = useNavigate();
@@ -22,7 +23,7 @@ export default function Header() {
         <h1 className="ml-4 text-xl font-semibold">
           <Link to="/">
             <img
-              src="/tanstack-word-logo-white.svg"
+              src={`${baseUrl}tanstack-word-logo-white.svg`}
               alt="TanStack Logo"
               className="h-10"
             />

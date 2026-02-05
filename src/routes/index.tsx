@@ -6,6 +6,7 @@ export const Route = createFileRoute("/")({
 });
 
 function App() {
+  const baseUrl = import.meta.env.BASE_URL;
   return (
     <>
       <div className="min-h-screen bg-linear-to-b from-gray-50 to-gray-100">
@@ -40,7 +41,7 @@ function App() {
                       set and make meaningful impacts through technology.
                     </p>
                     <img
-                      src="/headshot-on-white.jpg"
+                      src={`${baseUrl}headshot-on-white.jpg`}
                       alt="Professional headshot"
                       className="w-44 h-52 rounded-2xl object-cover shadow-md transition-transform hover:scale-105"
                     />
