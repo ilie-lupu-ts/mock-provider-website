@@ -29,6 +29,20 @@ export default function Header() {
             />
           </Link>
         </h1>
+        <div className="ml-auto">
+          {auth.isAuthenticated && (
+            <button
+              type="button"
+              onClick={() => {
+                auth.logout();
+                navigate({ to: "/login" });
+              }}
+              className="px-3 py-2 text-sm font-medium rounded-lg bg-red-600 hover:bg-red-700 transition-colors"
+            >
+              Logout
+            </button>
+          )}
+        </div>
       </header>
 
       <aside
