@@ -11,8 +11,11 @@ import { loadStoredAuth, persistAuth } from "./lib/auth";
 import type { AuthContextValue, StoredAuth } from "./lib/auth";
 
 // Create a new router instance
+const basepath = import.meta.env.BASE_URL.replace(/\/$/, "");
+
 const router = createRouter({
   routeTree,
+  basepath,
   context: {
     auth: undefined!,
   },
