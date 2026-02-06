@@ -29,6 +29,16 @@ export const PDF_URL = `${BASE_URL}dummy.pdf`;
 
 export const accounts: AccountConfig[] = [
   {
+    id: "acc-aurora-2",
+    name: "Aurora Energy Solutions",
+    accountNumber: "004-221-789",
+    pdfOptions: {
+      showIframe: false,
+      allowDirectDownload: false,
+      allowBlobOpen: true,
+    },
+  },
+  {
     id: "acc-primrose",
     name: "Primrose Energy",
     accountNumber: "001-482-118",
@@ -63,7 +73,7 @@ export const accounts: AccountConfig[] = [
 export const bills: BillRecord[] = [
   {
     id: "bill-2401",
-    accountId: "acc-primrose",
+    accountId: "acc-aurora-2",
     date: "2026-01-18",
     dueDate: "2026-02-01",
     amount: 126.4,
