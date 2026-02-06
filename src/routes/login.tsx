@@ -56,14 +56,14 @@ function LoginPage() {
           Use the demo credentials to access your billing portal.
         </p>
 
-        <div className="mt-4 rounded-lg bg-gray-50 border border-gray-200 p-3 text-sm text-gray-600">
+        {/* <div className="mt-4 rounded-lg bg-gray-50 border border-gray-200 p-3 text-sm text-gray-600">
           <div>
             Email: <span className="font-medium">{HARDCODED_EMAIL}</span>
           </div>
           <div>
             Password: <span className="font-medium">{HARDCODED_PASSWORD}</span>
           </div>
-        </div>
+        </div> */}
 
         <form onSubmit={handleSubmit} className="mt-6 space-y-4">
           <div className="space-y-2">
