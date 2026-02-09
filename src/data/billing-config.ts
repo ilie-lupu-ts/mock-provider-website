@@ -16,6 +16,7 @@ export type BillStatus = "paid" | "due" | "overdue";
 export type BillRecord = {
   id: string;
   billNumber: number;
+  accountNumber: string;
   accountId: string;
   date: string;
   dueDate: string;
@@ -75,6 +76,7 @@ export const bills: BillRecord[] = [
   {
     id: "bill-2401",
     billNumber: 100001,
+    accountNumber: "900-110-001",
     accountId: "acc-aurora-2",
     date: "2026-01-18",
     dueDate: "2026-02-01",
@@ -86,6 +88,7 @@ export const bills: BillRecord[] = [
   {
     id: "bill-2402",
     billNumber: 100002,
+    accountNumber: "900-110-002",
     accountId: "acc-primrose",
     date: "2025-12-18",
     dueDate: "2026-01-05",
@@ -97,6 +100,7 @@ export const bills: BillRecord[] = [
   {
     id: "bill-2403",
     billNumber: 100003,
+    accountNumber: "900-110-003",
     accountId: "acc-primrose",
     date: "2025-11-18",
     dueDate: "2025-12-04",
@@ -108,6 +112,7 @@ export const bills: BillRecord[] = [
   {
     id: "bill-2404",
     billNumber: 100004,
+    accountNumber: "900-110-004",
     accountId: "acc-primrose",
     date: "2025-10-18",
     dueDate: "2025-11-04",
@@ -119,6 +124,7 @@ export const bills: BillRecord[] = [
   {
     id: "bill-2405",
     billNumber: 100005,
+    accountNumber: "900-110-005",
     accountId: "acc-primrose",
     date: "2025-09-18",
     dueDate: "2025-10-04",
@@ -130,6 +136,7 @@ export const bills: BillRecord[] = [
   {
     id: "bill-2501",
     billNumber: 100006,
+    accountNumber: "900-110-006",
     accountId: "acc-northwind",
     date: "2026-01-10",
     dueDate: "2026-02-03",
@@ -141,6 +148,7 @@ export const bills: BillRecord[] = [
   {
     id: "bill-2502",
     billNumber: 100007,
+    accountNumber: "900-110-007",
     accountId: "acc-northwind",
     date: "2025-12-10",
     dueDate: "2026-01-03",
@@ -152,6 +160,7 @@ export const bills: BillRecord[] = [
   {
     id: "bill-2503",
     billNumber: 100008,
+    accountNumber: "900-110-008",
     accountId: "acc-northwind",
     date: "2025-11-10",
     dueDate: "2025-12-03",
@@ -163,6 +172,7 @@ export const bills: BillRecord[] = [
   {
     id: "bill-2504",
     billNumber: 100009,
+    accountNumber: "900-110-009",
     accountId: "acc-northwind",
     date: "2025-10-10",
     dueDate: "2025-11-03",
@@ -174,6 +184,7 @@ export const bills: BillRecord[] = [
   {
     id: "bill-2601",
     billNumber: 100010,
+    accountNumber: "900-110-010",
     accountId: "acc-aurora",
     date: "2026-01-08",
     dueDate: "2026-02-02",
@@ -185,6 +196,7 @@ export const bills: BillRecord[] = [
   {
     id: "bill-2602",
     billNumber: 100011,
+    accountNumber: "900-110-011",
     accountId: "acc-aurora",
     date: "2025-12-08",
     dueDate: "2026-01-02",
@@ -196,6 +208,7 @@ export const bills: BillRecord[] = [
   {
     id: "bill-2603",
     billNumber: 100012,
+    accountNumber: "900-110-012",
     accountId: "acc-aurora",
     date: "2025-11-08",
     dueDate: "2025-12-02",
@@ -207,6 +220,7 @@ export const bills: BillRecord[] = [
   {
     id: "bill-2604",
     billNumber: 100013,
+    accountNumber: "900-110-013",
     accountId: "acc-aurora",
     date: "2025-10-08",
     dueDate: "2025-11-02",
@@ -218,6 +232,7 @@ export const bills: BillRecord[] = [
   {
     id: "bill-2605",
     billNumber: 100014,
+    accountNumber: "900-110-014",
     accountId: "acc-aurora",
     date: "2025-09-08",
     dueDate: "2025-10-02",
@@ -229,6 +244,7 @@ export const bills: BillRecord[] = [
   {
     id: "bill-2606",
     billNumber: 100015,
+    accountNumber: "900-110-015",
     accountId: "acc-aurora",
     date: "2025-08-08",
     dueDate: "2025-09-02",
@@ -240,6 +256,7 @@ export const bills: BillRecord[] = [
   {
     id: "bill-2607",
     billNumber: 100016,
+    accountNumber: "900-110-016",
     accountId: "acc-aurora",
     date: "2025-07-08",
     dueDate: "2025-08-02",
@@ -251,6 +268,7 @@ export const bills: BillRecord[] = [
   {
     id: "bill-2608",
     billNumber: 100017,
+    accountNumber: "900-110-017",
     accountId: "acc-aurora",
     date: "2025-06-08",
     dueDate: "2025-07-02",

@@ -70,7 +70,7 @@ function BillsPage() {
                 >
                   <div>
                     <div className="text-sm text-gray-500">
-                      {account?.name} • {account?.accountNumber} • Bill #
+                      {account?.name} • {bill.accountNumber} • Bill #
                       {bill.billNumber}
                     </div>
                     <div className="text-lg font-semibold text-gray-900">

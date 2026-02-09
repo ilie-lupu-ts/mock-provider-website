@@ -58,7 +58,7 @@ function BillDetailPage() {
       <div className="max-w-5xl mx-auto space-y-6">
         <div className="space-y-2">
           <div className="text-sm text-gray-500">
-            {account.name} • {account.accountNumber} • Bill #{bill.billNumber}
+            {account.name} • {bill.accountNumber} • Bill #{bill.billNumber}
           </div>
           <h1 className="text-3xl font-semibold text-gray-900">
             {bill.description}
