@@ -28,17 +28,19 @@ export const Route = createRootRouteWithContext<RouterContext>()({
     <>
       <Header />
       <Outlet />
-      <TanStackDevtools
+      {/* <TanStackDevtools
         config={{
           position: "bottom-right",
+          defaultOpen: false,
         }}
         plugins={[
           {
             name: "Tanstack Router",
             render: <TanStackRouterDevtoolsPanel />,
+            defaultOpen: false,
           },
         ]}
-      />
+      /> */}
     </>
   ),
 });

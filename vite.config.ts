@@ -6,7 +6,6 @@ import tailwindcss from "@tailwindcss/vite";
 
 import { tanstackRouter } from "@tanstack/router-plugin/vite";
 import { fileURLToPath, URL } from "node:url";
-import contentCollections from "@content-collections/vite";
 import { basename } from "node:path";
 
 export default defineConfig({
@@ -22,8 +21,7 @@ export default defineConfig({
     return "/";
   })(),
   plugins: [
-    devtools(),
-    contentCollections(),
+    // devtools(),
     tanstackRouter({
       target: "react",
       autoCodeSplitting: true,
